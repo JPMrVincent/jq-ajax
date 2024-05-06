@@ -1,18 +1,18 @@
-# 从jquery中单独拆出ajax方法
-基于jquery.1.11.1.min.js进行分离，体积仅仅22kb。
+#Separate ajax methods from jquery
 
-# 需求
-1，满足正常的ajax请求需求
+Based on jquery.1.11.1min.js for separation, the volume is only 22kb.
 
-2，部分接口跨域，使用jsonp进行请求
+#Requirement
+1. for normal Ajax request requirements
+2. Some apis cross domains and use JSONP for requests
+3. Third party APIs, clearly requiring the use of JSONP
 
-3，第三方的接口api，明确要使用jsonp
+#JSONP Principle
 
-# jsonp原理
-通过将远程的post请求或者get请求，全部改成get请求，实现所谓的不跨域请求方式。其实中间代码有一层代理机制，具体翻看代码。
+By changing all remote post or get requests to get requests, the so-called non cross domain request method is achieved. In fact, there is a layer of proxy mechanism in the intermediate code. Let's take a closer look at the code.
 
-加入一个callBack方法进行回调，也可以不加。
+Add a callBack method for callback, or leave it blank.
 
-# 版本
-这是2018年的版本，至今都未进行任何改动。将jquery的$改成了J$，方便项目完整引入jquery组件，不占用jquery的$。此版本不再进行更新，有需求的朋友可以自行拿其他版本进行拆解，一般也就2-3个小时搞定。
+#Version
 
+This is the 2018 version and no changes have been made so far. Change the $ in jquery to J.$ to facilitate the complete introduction of jquery components into the project without occupying jquery $. This version will no longer be updated. The one who with requirements can disassemble other versions themselves, which usually takes 2-3 hours to complete.
