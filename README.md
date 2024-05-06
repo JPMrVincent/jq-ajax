@@ -1,5 +1,5 @@
 # 从jquery中单独拆出ajax方法
-基于jquery.1.11.1.min.js进行分离
+基于jquery.1.11.1.min.js进行分离，体积仅仅22kb。
 
 # 需求
 1，满足正常的ajax请求需求
