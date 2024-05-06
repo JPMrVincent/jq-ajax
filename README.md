@@ -19,15 +19,27 @@ This is the 2018 version and no changes have been made so far. Change the $ in j
 
 # Example
 window.J$.ajax({
+
   method: '',
+  
   url: '',
+  
   async:  false,
+  
   headers: {},
+  
   data: {},
+  
   dataType: '',
+  
   contentType: '',
+  
   crossDomain: false,
+  
   timeout: '',
+  
   success: (res) => {},
+  
   error: (err) => {}
+  
 }),
